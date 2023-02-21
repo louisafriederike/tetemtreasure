@@ -2,20 +2,25 @@
 #include <PN532_I2C.h>
 #include <PN532.h>
 #include <NfcAdapter.h>
+
 PN532_I2C pn532_i2c(Wire);
 NfcAdapter nfc = NfcAdapter(pn532_i2c);
 String tagId = "None";
 byte nuidPICC[4];
+int LEDpin = D4;
+int bright = 5;    // initial value of LED brightness
+int off = 0; 
+
  
 void setup(void) 
-{
+{pinMode(LEDpin, OUTPUT); 
  Serial.begin(115200);
  Serial.println("System initialized");
  nfc.begin();
 }
  
 void loop() 
-{
+{ 
  readNFC();
 }
  
@@ -24,9 +29,9 @@ void readNFC()
  if (nfc.tagPresent())
  {
    NfcTag tag = nfc.read();
-   tag.print();
+//   tag.print();
    tagId = tag.getUidString();
-   Serial.println(tagId);
+//   Serial.println(tagId);
  if (tag.hasNdefMessage())
     {
       
@@ -49,21 +54,23 @@ void readNFC()
         {
           payloadAsString += (char)payload[c];
         }
-        
-        
-        Serial.println("\nTag Content Shown Below\n");
-        
-        Serial.print("Original String: ");
-        Serial.println(payloadAsString);
-        
-        Serial.println("\nBy Manually removing the first 3 characters\n"); 
+              
+        //Tag Content Shown Below      
+        //Original String
+        //Serial.println(payloadAsString);       
+        //By Manually removing the first 3 characters
         String cleanString = payloadAsString;
-        cleanString.remove(0,3);
-         
-        Serial.print("Cleaned String: ");
+        cleanString.remove(0,3);     
+        Serial.print("");
         Serial.println(cleanString);
-
-
+//        if (cleanString == "audio")
+//            { analogWrite(LEDpin, off); 
+//              delay(1000);
+//              analogWrite(LEDpin, bright);  // set LED brightness as PWM signal
+//              delay(1000);
+//              analogWrite(LEDpin, off); 
+//              delay(1000);
+//            }
         String uid = record.getId();
         if (uid != "") 
         {
@@ -71,14 +78,6 @@ void readNFC()
           Serial.println(uid);
         }
       }
-    
+
  delay(2000);
-}
-}}
-//void playTrack() 
-//{
-// if (UID = 63 82 C0 98)
-// {
-//  Audio.play("1.wav");
-// }
-//}
+}}}

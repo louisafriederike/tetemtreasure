@@ -6,8 +6,8 @@
   
   body {
     font: 1.0em/1.6 'Inconsolata', monospace;
-    color:  #c9cccf;
-    font-weight: 400;
+    color:  #ffea00;
+    font-weight: 200;
     background-color: black;
     text-shadow: rgb(34, 255, 0);
     /* overflow-y: hidden;
@@ -60,13 +60,13 @@
   
   
   .section{
-    border: 2px solid #c9cccf;
-    border-radius:6px;
+    border: 1.5px solid #1b03f7;
+    border-radius:3px;
     display: flex;
     flex-direction: column;
     padding: 15px;
     margin-bottom:8px;
-    background-color: #6c767d;
+    background-color: #2c2c2c;
     /* box-shadow: 0 0 20px 4px #0d0d0df2; */
   }
   
