@@ -73,6 +73,19 @@ void readNFC()
               delay(1000);
               analogWrite(LEDpin, off); 
             }
+
+            if (cleanString == "level")
+            {
+              analogWrite(LEDpin, off);  // set LED brightness as PWM signal
+              delay(100);
+              analogWrite(LEDpin, bright); 
+              delay(100);
+              analogWrite(LEDpin, off); 
+              delay(100);
+              analogWrite(LEDpin, bright); 
+              delay(100);
+              analogWrite(LEDpin, off); 
+            }
         String uid = record.getId();
         if (uid != "") 
         {
