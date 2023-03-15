@@ -173,6 +173,56 @@ void readNFC()
               analogWrite(LEDpin, off); 
               myDFPlayer.play(2);
             }
+
+                    if (cleanString == "1")
+            {
+              analogWrite(LEDpin, off);  // set LED brightness as PWM signal
+              delay(1000);
+              analogWrite(LEDpin, bright); 
+              delay(1000);
+              analogWrite(LEDpin, off); 
+              myDFPlayer.play(1);
+            }
+
+                    if (cleanString == "2")
+            {
+              analogWrite(LEDpin, off);  // set LED brightness as PWM signal
+              delay(1000);
+              analogWrite(LEDpin, bright); 
+              delay(1000);
+              analogWrite(LEDpin, off); 
+              myDFPlayer.play(2);
+            }
+
+                    if (cleanString == "3")
+            {
+              analogWrite(LEDpin, off);  // set LED brightness as PWM signal
+              delay(1000);
+              analogWrite(LEDpin, bright); 
+              delay(1000);
+              analogWrite(LEDpin, off); 
+              myDFPlayer.play(3);
+            }
+
+                    if (cleanString == "4")
+            {
+              analogWrite(LEDpin, off);  // set LED brightness as PWM signal
+              delay(1000);
+              analogWrite(LEDpin, bright); 
+              delay(1000);
+              analogWrite(LEDpin, off); 
+              myDFPlayer.play(4);
+            }
+
+                    if (cleanString == "5")
+            {
+              analogWrite(LEDpin, off);  // set LED brightness as PWM signal
+              delay(1000);
+              analogWrite(LEDpin, bright); 
+              delay(1000);
+              analogWrite(LEDpin, off); 
+              myDFPlayer.play(5);
+            }
         String uid = record.getId();
         if (uid != "") 
         {
