@@ -22,9 +22,27 @@
     </div>
     <div class="section">
         <div id="residents">
-            <!-- <img src="img/gamma.jpg"> -->
-            <p>password
-            </p>
+            <form>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <input type="button" value="Submit" onclick="checkPassword()">
+            </form>
+            <div id="hidden-content" style="display:none">
+                <h2>Hidden Content</h2>
+                <p>This is the hidden content that will be unlocked when the correct password is entered.</p>
+            </div>
+            <script>
+                function checkPassword() {
+                    var password = document.getElementById("password").value;
+                    if (password === "mypassword") {
+                        document.getElementById("hidden-content").style.display = "block";
+                    } else {
+                        alert("Incorrect password. Please try again.");
+                    }
+                }
+            </script>
+        </body>
+        </html>
   </div>
     </div>
     <div class="section" id="adress">
