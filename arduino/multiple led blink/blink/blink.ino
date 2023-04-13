@@ -1,117 +1,53 @@
 #include "pitches.h"
 
-// melody 1:
-int melody1[] = {
-  NOTE_C4, NOTE_D4, NOTE_E4, NOTE_F4, NOTE_G4, 0, NOTE_B3, NOTE_C4
-};
-int noteDurations1[] = {
-  4, 8, 8, 4, 4, 4, 4, 4
-};
 
-// melody 2:
+
 int melody2[] = {
-  NOTE_E4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_E4, 0, NOTE_E4, NOTE_E4
+NOTE_E2, NOTE_E2, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_C5, NOTE_B4, NOTE_A2, NOTE_A2
 };
 int noteDurations2[] = {
-  4, 8, 8, 4, 4, 4, 4, 4
+2, 2, 4, 4, 4, 4, 4, 2, 2
 };
 
-//// melody 3:
-//int melody3[] = {
-//  NOTE_E4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_E4, 0, NOTE_E4, NOTE_E4
-//};
-//int noteDurations2[] = {
-//  4, 8, 8, 4, 4, 4, 4, 4
-//};
-//
-//// melody 4:
-//int melody2[] = {
-//  NOTE_E4, NOTE_D4, NOTE_C4, NOTE_D4, NOTE_E4, 0, NOTE_E4, NOTE_E4
-//};
-//int noteDurations2[] = {
-//  4, 8, 8, 4, 4, 4, 4, 4
-//};
-
-// melody 5:
-int melody5[] = {
-  NOTE_C4, NOTE_C4, NOTE_D4, NOTE_C4, NOTE_F4, NOTE_E4,
-  NOTE_C4, NOTE_C4, NOTE_D4, NOTE_C4, NOTE_G4, NOTE_F4,
-  NOTE_C4, NOTE_C4, NOTE_C5, NOTE_A4, NOTE_F4, NOTE_E4, NOTE_D4,
-  NOTE_AS4, NOTE_AS4, NOTE_A4, NOTE_F4, NOTE_G4, NOTE_F4
-};
-
-int melody6[] = {
-  NOTE_A3, NOTE_A3, NOTE_D4, NOTE_D4, NOTE_G4, NOTE_G4,
-  NOTE_FS4, NOTE_FS4, NOTE_D4, NOTE_D4, NOTE_A3, NOTE_A3,
-  NOTE_E4, NOTE_E4, NOTE_FS4, NOTE_FS4, NOTE_D4, NOTE_D4,
-  NOTE_G4, NOTE_G4, NOTE_A4, NOTE_A4, NOTE_C5, NOTE_C5,
-  NOTE_A4, NOTE_A4, NOTE_G4, NOTE_G4, NOTE_FS4, NOTE_FS4,
-  NOTE_D4, NOTE_D4, NOTE_A3, NOTE_A3, NOTE_D4, NOTE_D4,
-  NOTE_G4, NOTE_G4, NOTE_FS4, NOTE_FS4, NOTE_D4, NOTE_D4,
-  NOTE_A3, NOTE_A3, NOTE_E4, NOTE_E4, NOTE_FS4, NOTE_FS4,
-  NOTE_D4, NOTE_D4, NOTE_G4, NOTE_G4, NOTE_A4, NOTE_A4,
-  NOTE_C5, NOTE_C5, NOTE_A4, NOTE_A4, NOTE_G4, NOTE_G4,
-  NOTE_FS4, NOTE_FS4, NOTE_D4, NOTE_D4, NOTE_A3, NOTE_A3
-};
-
-int noteDurations6[] = {
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8,
-  8, 8, 8, 8, 8, 8
-};
-
-int noteDurations5[] = {
-  4, 4, 8, 8, 4, 8,
-  4, 4, 8, 8, 4, 8,
-  4, 4, 4, 4, 4, 2, 2,
-  4, 4, 8, 8, 4, 8
-};
-
-int melody3[] = {
-  NOTE_E5, NOTE_D5, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_E5, 0, 
-  NOTE_E5, NOTE_D5, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_E5, 0,
-  NOTE_E5, NOTE_E5, NOTE_F5, NOTE_G5, NOTE_G5, NOTE_F5, NOTE_E5, NOTE_D5, 
-  NOTE_C5, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_D5
-};
-
-int noteDurations3[] = {
-  4, 4, 2, 2, 4, 4, 2, 2, 
-  4, 4, 2, 2, 4, 4, 2, 2,
-  4, 4, 2, 2, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
-};
 
 int melody4[] = {
-  NOTE_C4, NOTE_D4, NOTE_E4, NOTE_C4, NOTE_E4, NOTE_D4, NOTE_C4
+NOTE_A2, NOTE_A2, NOTE_C5, NOTE_D5, NOTE_E5, NOTE_D5, NOTE_C5, NOTE_B4, NOTE_B4
 };
-
 int noteDurations4[] = {
-  4, 4, 4, 4, 4, 4, 2
+2, 2, 4, 4, 4, 4, 4, 2, 2
 };
 
-int melody9[] = {
-  NOTE_A1, NOTE_G1, NOTE_E1, NOTE_F1, NOTE_A1, NOTE_C1, NOTE_D1, NOTE_C1,
-  NOTE_A2, NOTE_G2, NOTE_E2, NOTE_F2, NOTE_A2, NOTE_C2, NOTE_D2, NOTE_C2,
-  NOTE_A1, NOTE_G1, NOTE_E1, NOTE_F1, NOTE_A1, NOTE_C1, NOTE_D1, NOTE_C1,
-  NOTE_A4, NOTE_G4, NOTE_E4, NOTE_F4, NOTE_A4, NOTE_C4, NOTE_D4, NOTE_C4,
 
+int melody1[] = {
+NOTE_B4, NOTE_B4, NOTE_D5, NOTE_E5, NOTE_F5, NOTE_E5, NOTE_D5, NOTE_C6, NOTE_C6
+};
+int noteDurations1[] = {
+2, 2, 4, 4, 4, 4, 4, 2, 2
 };
 
-int noteDurations9[] = {
-  8, 8, 8, 8, 8, 8, 4, 4,
-  8, 8, 8, 8, 8, 8, 4, 4,
-  8, 8, 8, 8, 8, 8, 4, 4,
-  8, 8, 8, 8, 8, 8, 4, 4,
-  4, 4, 4, 4, 4, 4, 4, 4
+
+int melody6[] = {
+NOTE_C6, NOTE_C6, NOTE_E5, NOTE_F5, NOTE_G5, NOTE_F5, NOTE_E5, NOTE_D3, NOTE_D3
+};
+int noteDurations6[] = {
+2, 2, 4, 4, 4, 4, 4, 2, 2
 };
 
+
+int melody3[] = {
+NOTE_D3, NOTE_D3, NOTE_F5, NOTE_G5, NOTE_A5, NOTE_G5, NOTE_F5, NOTE_E5, NOTE_E5
+};
+int noteDurations3[] = {
+2, 2, 4, 4, 4, 4, 4, 2, 2
+};
+
+
+int melody5[] = {
+NOTE_E5, NOTE_E5, NOTE_G5, NOTE_A5, NOTE_B5, NOTE_A5, NOTE_G5, NOTE_E2, NOTE_E2
+};
+int noteDurations5[] = {
+2, 2, 4, 4, 4, 4, 4, 2, 2
+};
 
 // speaker pins
 const int speakerPin1 = 16;
