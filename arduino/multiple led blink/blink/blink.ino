@@ -3,10 +3,10 @@
 
 
 int melody2[] = {
-NOTE_E2, NOTE_E2, NOTE_B4, NOTE_C5, NOTE_D5, NOTE_C5, NOTE_B4, NOTE_A2, NOTE_A2
+NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2
 };
 int noteDurations2[] = {
-2, 2, 4, 4, 4, 4, 4, 2, 2
+2, 2, 2, 2, 2, 2, 2, 2,
 };
 
 
@@ -27,7 +27,7 @@ int noteDurations1[] = {
 
 
 int melody6[] = {
-NOTE_C6, NOTE_C6, NOTE_E5, NOTE_F5, NOTE_G5, NOTE_F5, NOTE_E5, NOTE_D3, NOTE_D3
+NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2, NOTE_E2
 };
 int noteDurations6[] = {
 2, 2, 4, 4, 4, 4, 4, 2, 2

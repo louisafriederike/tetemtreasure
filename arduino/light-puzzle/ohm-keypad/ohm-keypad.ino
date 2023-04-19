@@ -15,7 +15,7 @@ byte pin_column[COLUMN_NUM] = {14, 12, 13, 15}; //connect to the column pinouts 
 
 const int LED_PIN = 16; // connect the LED to pin 9
 
-char sequence[] = {'e', 'h', '0', '0', '#', '#'};
+char sequence[] = {'e', '5', '0', '#'};
 int sequence_index = 0;
 unsigned long sequence_start_time = 0;
 
